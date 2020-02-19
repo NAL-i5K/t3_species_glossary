@@ -1,0 +1,10 @@
+name = t3_species_glossary
+description = All Tripal 3 organisms in one page with pagination and on the top an alphabetic order search attached
+core = 7.x
+package = Features
+version = 7.x-1.0
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = t3_species_glossary
+features_exclude[dependencies][ctools] = ctools

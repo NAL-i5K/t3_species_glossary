@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the t3_species_glossary feature.
+ */
+
+include_once 't3_species_glossary.features.inc';
