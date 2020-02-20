@@ -6,3 +6,6 @@ Functionality desired:
  - Total count of i5k Workspace Organisms
  - A - Z glossary with count
  - On initial open, paginated list of all organisms (*Genus species*) as links
+
+Legacy (Tripal 2):
+![Legacy Species Overview](Legacy.png)
