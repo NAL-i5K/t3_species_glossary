@@ -59,7 +59,7 @@ function t3_species_glossary_views_default_views() {
   $handler->display->display_options['header']['result']['id'] = 'result';
   $handler->display->display_options['header']['result']['table'] = 'views';
   $handler->display->display_options['header']['result']['field'] = 'result';
-  $handler->display->display_options['header']['result']['content'] = 'Displaying @start - @end of @total Tripal 3 organisms.';
+  $handler->display->display_options['header']['result']['content'] = 'Displaying @start - @end of @total organisms.';
   /* Field: Organism: Description */
   $handler->display->display_options['fields']['schema__description']['id'] = 'schema__description';
   $handler->display->display_options['fields']['schema__description']['table'] = 'OBI__0100026';
