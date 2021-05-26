@@ -5,3 +5,4 @@
  */
 
 include_once 't3_species_glossary.features.inc';
+include_once 'theme/views-view-table--t3_species_glossary.tpl.php';
