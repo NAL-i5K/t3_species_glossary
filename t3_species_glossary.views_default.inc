@@ -15,7 +15,7 @@ function t3_species_glossary_views_default_views() {
 
   $view = new view();
   $view->name = 't3_species_glossary';
-  $view->description = '';
+  $view->description = 'A listing of all published species on this site.';
   $view->tag = 'default';
   $view->base_table = 'OBI__0100026';
   $view->human_name = 't3_species_glossary';
@@ -26,6 +26,7 @@ function t3_species_glossary_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Species Overview';
+  $handler->display->display_options['css_class'] = 'species_overview_table';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -55,6 +56,8 @@ function t3_species_glossary_views_default_views() {
       'empty_column' => 0,
     ),
   );
+  $handler->display->display_options['style_options']['caption'] = 'Table that shows all organisms on this site.';
+  $handler->display->display_options['style_options']['summary'] = 'Table listing all organisms on this site.';
   /* Header: Global: Result summary */
   $handler->display->display_options['header']['result']['id'] = 'result';
   $handler->display->display_options['header']['result']['table'] = 'views';
