@@ -56,8 +56,8 @@ function t3_species_glossary_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  $handler->display->display_options['style_options']['caption'] = 'Table that shows all organisms on this site.';
-  $handler->display->display_options['style_options']['summary'] = 'Table listing all organisms on this site.';
+  //$handler->display->display_options['style_options']['caption'] = 'Table that shows all organisms on this site.';
+  $handler->display->display_options['style_options']['summary'] = 'Table with links to organism pages.';
   /* Header: Global: Result summary */
   $handler->display->display_options['header']['result']['id'] = 'result';
   $handler->display->display_options['header']['result']['table'] = 'views';
