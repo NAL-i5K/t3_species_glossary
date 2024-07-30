@@ -26,3 +26,25 @@ include_once 't3_species_glossary.features.inc';
       }
     }
   } */
+
+/**
+ * Implements of hook_update_N().
+ */
+function t3_species_glossary_update_7001() {
+  // Load the view by its machine name
+  $view = views_get_view('t3_species_glossary');
+
+  if ($view) {
+    // We have a view, let's get the $handler for it.
+    $handler = &$view->display['default'];
+    if ($handler) {
+      // Add Species to the Sort criterion.
+      $handler->display_options['sorts']['taxrank__species']['id'] = 'taxrank__species';
+      $handler->display_options['sorts']['taxrank__species']['table'] = 'OBI__0100026';
+      $handler->display_options['sorts']['taxrank__species']['field'] = 'taxrank__species';
+    }
+
+    // Save the changes to the view
+    views_save_view($view);
+  }
+}
