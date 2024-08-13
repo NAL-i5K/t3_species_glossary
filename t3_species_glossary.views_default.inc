@@ -72,6 +72,10 @@ function t3_species_glossary_views_default_views() {
   $handler->display->display_options['sorts']['taxrank__genus']['table'] = 'OBI__0100026';
   $handler->display->display_options['sorts']['taxrank__genus']['field'] = 'taxrank__genus';
   $handler->display->display_options['sorts']['taxrank__genus']['expose']['label'] = 'Genus';
+  /* Sort criterion: Organism: Species */
+  $handler->display->display_options['sorts']['taxrank__species']['id'] = 'taxrank__species';
+  $handler->display->display_options['sorts']['taxrank__species']['table'] = 'OBI__0100026';
+  $handler->display->display_options['sorts']['taxrank__species']['field'] = 'taxrank__species';
   /* Contextual filter: Global: Null */
   $handler->display->display_options['arguments']['null']['id'] = 'null';
   $handler->display->display_options['arguments']['null']['table'] = 'views';
